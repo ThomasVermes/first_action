@@ -2,28 +2,29 @@
 # Visit https://bit.ly/cffinit to generate yours today!
 
 cff-version: 1.2.0
-title: My First Action
+title: Record Home Dashboard
 message: >-
   If you use this software, please cite it using the
   metadata from this file.
 type: software
 authors:
-  - given-names: Thomas
-    family-names: Vermes
-    email: thomas.vermes@usb.ch
-  - name: University Hospital Basel
-    address: Spitalstrasse 21
-    city: Basel
-    country: CH
-    post-code: '4031'
-  - name: >-
-      University Hospital Basel - Orthopaedics and
-      traumatology
-    address: Spitalstrasse 21
-    city: Basel
-    country: CH
-    post-code: '4031'
-    website: >-
-      https://www.unispital-basel.ch/en/orthopaedie-traumatologie
-version: 1.0.1
-date-released: '2024-03-20'
+  - given-names: Ekin
+    family-names: Tertemiz
+    email: ekin.tertemiz@swisstph.ch
+    affiliation: Swiss Tropical and Public Health Institute
+identifiers:
+  - type: url
+    value: >-
+      https://github.com/Research-IT-Swiss-TPH/redcap-record-home-dashboard
+repository-code: >-
+  https://github.com/Research-IT-Swiss-TPH/redcap-record-home-dashboard
+abstract: >-
+  A REDCap External Module that enables to add a customized
+  Dashboard to the Record Homepage
+keywords:
+  - REDCap
+  - External Module
+  - Dashboard
+license: MIT
+version: 2.2.1
+date-released: '2023-07-25'
