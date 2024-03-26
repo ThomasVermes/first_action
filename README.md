@@ -1,2 +1,2 @@
-# fist_action
+# first_action
 For actions test
