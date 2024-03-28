@@ -29,12 +29,7 @@ jobs:
       - name: Use release tag
         run: echo "The release tag is $RELEASE_TAG"
         
-      #Set up Git
-      - name: Set up Git
-        run: |
-          git config --global user.email "you@example.com"
-          git config --global user.name "Your Name"
-        
+       
       # Runs a single command using the runners shell
       - name: Run a Python script
         run: python .github/workflows/script.py
@@ -45,3 +40,5 @@ jobs:
           git add CITATION.cff
           git commit -m "Aggiornato il file CITATION.cff con nuova versione e data di rilascio"
           git push
+          env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
