@@ -36,6 +36,6 @@ jobs:
         #Runs commit
       - name: Commit and push changes
         run: |
-          git add ../../CITATION.cff
+          git add CITATION.cff
           git commit -m "Aggiornato il file CITATION.cff con nuova versione e data di rilascio"
           git push
