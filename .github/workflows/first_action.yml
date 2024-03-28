@@ -35,7 +35,7 @@ jobs:
           python .github/workflows/script.py
           
           # Aggiungi il file modificato al commit
-          git add ../../CITATION.cff
+          git add CITATION.cff
           
           # Esegui il commit con un messaggio descrittivo
           git commit -m "Aggiornato il file CITATION.cff con nuova versione e data di rilascio"
