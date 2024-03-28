@@ -4,9 +4,6 @@ Created on Tue Mar 26 11:44:39 2024
 
 @author: vermest
 """
-
-#Clear old variables
-globals().clear()
 import yaml
 import datetime
 import os
