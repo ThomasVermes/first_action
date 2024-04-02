@@ -18,29 +18,29 @@ jobs:
 
   # Steps represent a sequence of tasks that will be executed as part of the job
   steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v3
+  # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+  - uses: actions/checkout@v3
 
-    - name: Get release tag
-      id: get_release_tag
-      run: echo "RELEASE_TAG=${GITHUB_REF/refs\/tags\//}" >> $GITHUB_ENV
+  - name: Get release tag
+    id: get_release_tag
+    run: echo "RELEASE_TAG=${GITHUB_REF/refs\/tags\//}" >> $GITHUB_ENV
 
-    # Use the RELEASE_TAG environment variable in your subsequent steps
-    - name: Use release tag
-      run: echo "The release tag is $RELEASE_TAG"
-      
-     - name: Set up Git
-      run: |
-      git config --global user.email "thomas.vermes@usb.ch"
-      git config --global user.name "Thomas Vermes" 
-     
-    # Runs a single command using the runners shell
-    - name: Run a Python script
-      run: python .github/workflows/script.py
+  # Use the RELEASE_TAG environment variable in your subsequent steps
+  - name: Use release tag
+    run: echo "The release tag is $RELEASE_TAG"
+    
+   - name: Set up Git
+    run: |
+    git config --global user.email "thomas.vermes@usb.ch"
+    git config --global user.name "Thomas Vermes" 
+   
+  # Runs a single command using the runners shell
+  - name: Run a Python script
+    run: python .github/workflows/script.py
 
-      #Runs commit
-    - name: Commit and push changes
-      run: |
-          git add CITATION.cff
-          git commit -m "Aggiornato il file CITATION.cff con nuova versione e data di rilascio"
-          git push
+    #Runs commit
+  - name: Commit and push changes
+    run: |
+        git add CITATION.cff
+        git commit -m "Aggiornato il file CITATION.cff con nuova versione e data di rilascio"
+        git push
