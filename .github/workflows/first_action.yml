@@ -22,11 +22,8 @@ jobs:
     
       - name: Get release tag
         id: get_release_tag
+        #create variable RELEASE_TAG and push it to the $GITHUB_ENV environment
         run: echo "RELEASE_TAG=${GITHUB_REF/refs\/tags\//}" >> $GITHUB_ENV
-      
-      # Use the RELEASE_TAG environment variable in your subsequent steps
-      - name: Use release tag
-        run: echo "The release tag is $RELEASE_TAG"
         
       # Runs a single command using the runners shell
       - name: Run a Python script
@@ -34,12 +31,10 @@ jobs:
       
       - name: Commit and Push changes
         run: |
-            git config --global user.email "thomas.vermes@usb.ch"
-            git config --global user.name "GitHub Actions"
             # Aggiungi il file modificato al commit
             git add CITATION.cff
             # Esegui il commit con un messaggio descrittivo
-            git commit -m "Aggiornato il file CITATION.cff con nuova versione e data di rilascio"
+            git commit -m "File CITATION.cff aggiornato automaticamente (tramite Action) con nuova versione e data di rilascio"
             # Esegui il push delle modifiche al repository
             git push origin HEAD:main
 
