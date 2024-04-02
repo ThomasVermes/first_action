@@ -31,6 +31,8 @@ jobs:
       
       - name: Commit and Push changes
         run: |
+            git config user.email "thomasvermes.ch@gmail.com"
+            git config user.name "GitHub Action"
             # Aggiungi il file modificato al commit
             git add CITATION.cff
             # Esegui il commit con un messaggio descrittivo
