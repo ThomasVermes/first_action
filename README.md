@@ -1,4 +1,4 @@
-# Repository Name: first_action
+# README
 
 This repository contains a GitHub action/workflow designed to automatically update the `CITATION.cff` file.
 
