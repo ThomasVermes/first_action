@@ -18,4 +18,4 @@ date-released: '2024-04-02'
 message: If you use this software, please cite it using the metadata from this file.
 title: My First Action
 type: software
-version: refs/heads/main
+version: v2.0.3
