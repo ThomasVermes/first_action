@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Tue Mar 26 11:44:39 2024
-
+This script get the new release tag and date and put it automatically in the citation file
 @author: vermest
 """
 import yaml
