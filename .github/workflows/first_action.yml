@@ -44,5 +44,3 @@ jobs:
           git add CITATION.cff
           git commit -m "Aggiornato il file CITATION.cff con nuova versione e data di rilascio"
           git push
-        #  env:
-         #   GITHUB_TOKEN: ${{ secrets.MY_SECRET }}
