@@ -32,7 +32,7 @@ jobs:
       - name: Run a Python script
         run: python .github/workflows/script.py
       
-      - name: test
+      - name: Commit and Push changes
         run: |
             git config --global user.email "thomas.vermes@usb.ch"
             git config --global user.name "GitHub Actions"
@@ -41,6 +41,6 @@ jobs:
             # Esegui il commit con un messaggio descrittivo
             git commit -m "Aggiornato il file CITATION.cff con nuova versione e data di rilascio"
             # Esegui il push delle modifiche al repository
-            git push
+            git push HEAD:main
 
 
