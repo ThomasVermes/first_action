@@ -45,4 +45,4 @@ jobs:
           git commit -m "Aggiornato il file CITATION.cff con nuova versione e data di rilascio"
           git push
           env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            GITHUB_TOKEN: ${{ secrets.MY_SECRET }}
