@@ -32,7 +32,7 @@ jobs:
       - name: Run a Python script
         run: python .github/workflows/script.py
       
-      - name test:
+      - name: test:
         run: |
             git config --global user.email "thomas.vermes@usb.ch"
             git config --global user.name "GitHub Actions"
