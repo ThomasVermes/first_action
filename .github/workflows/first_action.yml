@@ -41,6 +41,6 @@ jobs:
             # Esegui il commit con un messaggio descrittivo
             git commit -m "Aggiornato il file CITATION.cff con nuova versione e data di rilascio"
             # Esegui il push delle modifiche al repository
-            git push HEAD:main
+            git push origin HEAD:main
 
 
